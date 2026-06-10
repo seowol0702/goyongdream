@@ -124,7 +124,7 @@ document.getElementById('applyForm').addEventListener('submit',function(e){
       params.append('company',company||'(미입력)');
       params.append('source',LEAD_SOURCE);
       params.append('submittedAt',new Date().toISOString());
-      fetch(LEAD_WEBHOOK_URL,{method:'POST',body:params,mode:'no-cors',keepalive:true,redirect:'manual'});
+      fetch(LEAD_WEBHOOK_URL,{method:'POST',body:params,mode:'no-cors',keepalive:true});
     }catch(err){console.warn('lead send failed:',err);}
   }
   try{
