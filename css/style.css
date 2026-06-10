@@ -58,8 +58,8 @@ ul,ol{list-style:none}
 .site-header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.brand-logo{height:34px!important;width:auto;max-height:34px;display:block;object-fit:contain}
-@media (max-width:600px){.brand-logo{height:28px!important;max-height:28px}}
+.brand-logo{height:42px!important;width:auto;max-height:42px;display:block;object-fit:contain}
+@media (max-width:600px){.brand-logo{height:34px!important;max-height:34px}}
 .brand .mark{width:32px;height:32px;border-radius:8px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:17px}
 .brand .word{font-size:21px;font-weight:800;color:var(--navy);letter-spacing:-.5px}
 .brand .word .g{color:var(--blue)}
@@ -160,5 +160,5 @@ ul,ol{list-style:none}
 @media (max-width:600px){.float-cta{left:14px;right:14px;min-width:0;transform:none;bottom:14px;border-radius:13px;padding:18px}.float-cta:hover{transform:translateY(-2px)}}
 
 /* 푸터 로고 (다크 배경 → 흰 라운드 칩 위에 컬러 로고) */
-.footer-logo-wrap{display:inline-block;background:#fff;border-radius:8px;padding:7px 12px}
-.footer-logo{height:26px;width:auto;max-height:26px;display:block}
+.footer-logo-wrap{display:inline-block;background:#fff;border-radius:8px;padding:7px 12px;line-height:0}
+.footer-logo{height:28px!important;width:auto!important;max-height:28px!important;display:block}
