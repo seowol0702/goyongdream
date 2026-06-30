@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="우리 회사가 받을 수 있는 고용지원금을 1분 안에 무료로 확인하세요. 로그인·서류·비용 없이 이름과 연락처만 남기면 전문 노무법인과 협업하는 고용드림이 직접 안내드립니다.">
+<meta name="description" content="직원을 채용했다면 받을 수 있는 고용지원금이 있습니다. 고용드림이 1분 무료로 진단해 드립니다.">
 <title>고용드림 | 1분 무료 고용지원금 진단</title>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="고용드림">
@@ -811,9 +811,10 @@ ul,ol{list-style:none}
 
 /* ===== Floating Mobile CTA ===== */
 .floating-cta{
-  display:none;
+  display:block;
   position:fixed;
-  bottom:14px;left:14px;right:14px;
+  bottom:16px;left:50%;transform:translateX(-50%);
+  width:min(440px,calc(100% - 28px));
   z-index:90;
 }
 .floating-cta button{
@@ -827,9 +828,9 @@ ul,ol{list-style:none}
   box-shadow:0 14px 32px rgba(0,119,190,.38);
   letter-spacing:-.3px;
 }
-@media (max-width:760px){
-  .floating-cta{display:block}
-  body{padding-bottom:96px}
+body{padding-bottom:100px}
+@media (max-width:600px){
+  .floating-cta{bottom:12px}
 }
 
 /* ===== Utility ===== */
